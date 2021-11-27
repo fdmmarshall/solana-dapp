@@ -1,6 +1,6 @@
 use anchor_lang::prelude::*;
 
-declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
+declare_id!("969LoebfA2i4DsrPXqUdHEv2aXd9XWrJgkcwgoPbVitE");
 
 #[program]
 pub mod myepicproject {
