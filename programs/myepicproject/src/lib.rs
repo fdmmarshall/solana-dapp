@@ -32,6 +32,14 @@ pub struct StartStuffOff<'info> {
     pub system_program: Program <'info, System>,
 }
 
+// Specify what data you want in the AddGif Context.
+// Getting a handle on the flow of things :)?
+#[derive(Accounts)]
+pub struct AddGif<'info> {
+  #[account(mut)]
+  pub base_account: Account<'info, BaseAccount>,
+}
+
 // Tell Solana what we want to store on this account.
 #[account]
 pub struct BaseAccount {
