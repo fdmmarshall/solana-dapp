@@ -14,6 +14,14 @@ pub mod myepicproject {
   }
 }
 
+pub fn add_gif(ctx: Context<AddGif>) -> ProgramResult {
+    // Get a reference to the account and increment total_gifs.
+    let base_account = &mut ctx.accounts.base_account;
+    base_account.total_gifs += 1;
+    Ok(())
+  }
+}
+
 // Attach certain variables to the StartStuffOff context.
 #[derive(Accounts)]
 pub struct StartStuffOff<'info> {
